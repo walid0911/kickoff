@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+/* header styles */
+
+header {
+    position: fixed;
+    z-index: 2;
+    background: #fff;
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 100px;
+    font-family: 'roboto', sans-serif;
+}
+
+header .logo img {
+    width: 50px;
+}
+
+header .nav-bar ul {
+    position: relative;
+    right: 200px;
+    display: flex;
+    flex-direction: row;
+}
+
+header .nav-bar ul li {
+    list-style: none;
+}
+
+header .nav-bar ul li a {
+    text-decoration: none;
+    color: #2f9bff;
+    padding: 10px 25px;
+}
+
+/* link hover animation (in progress)*/
+
+header .nav-bar ul li::after {
+    content: '';
+    background: #5A06B9;
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-100%);
+    width: 0px;
+    height: 2px;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+header .nav-bar ul li:hover:after {
+    opacity: 1;
+    width: 50px;
+}
+
+/* **************** */
+
+.register-btn {
+    color: #fff;
+    background: #5A06B9;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* hero section styles */
+
+.section1 {
+    position: absolute;
+    top: 12vh;
+    width: 100vw;
+    height: 88vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(47, 155, 255, 0.45) 0%, rgba(90, 6, 185, 0.45) 100%), url(../images/bg.jpg);
+    border-bottom-left-radius: 100% 10%;
+    border-bottom-right-radius: 100% 10%;
+    border-top-left-radius: 100% 10%;
+    border-top-right-radius: 100% 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    font-family: 'roboto', sans-serif;
+}
+
+.logo-kickoff {
+    position: relative;
+    width: 30%;
+}
+
+.hero-section {
+    width: 30%;
+}
+
+.attraction-phrase {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.hero-text {
+    font-size: 1em;
+    font-weight: 400;
+}
+
