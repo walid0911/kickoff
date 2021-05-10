@@ -1,0 +1,380 @@
+@font-face {
+  font-family: 'poppins';
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'poppins', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 0.8vw;
+  background: white;
+}
+
+::-webkit-scrollbar-track {
+  background: #dadada;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2f9bff;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5a06b9;
+}
+
+header {
+  position: fixed;
+  width: 100vw;
+  height: 10vh;
+  padding: 10px 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #ffffff;
+  z-index: 10;
+}
+
+header .register-btn {
+  position: relative;
+  color: #ffffff;
+  background: #5a06b9;
+  padding: .8em 2em;
+  border-radius: 20px;
+  font-size: 1vw;
+  font-weight: 700;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+header .register-btn:hover {
+  color: #5a06b9;
+  background: #ff3986;
+}
+
+header .nav-bar {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .nav-bar ul {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+header .nav-bar ul li {
+  position: relative;
+  padding: 0 15px;
+}
+
+header .nav-bar ul li a {
+  position: relative;
+  color: #2f9bff;
+  text-decoration: none;
+  padding: 5px;
+}
+
+header .nav-bar ul li a::after {
+  content: '';
+  background: #5a06b9;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0px;
+  height: 2px;
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+header .nav-bar ul li a:hover::after {
+  opacity: 1;
+  width: 100%;
+}
+
+header .nav-bar ul .active a {
+  border-bottom: solid 2px #5a06b9;
+}
+
+header .burger {
+  position: relative;
+  display: none;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  cursor: pointer;
+}
+
+header .burger .line1 {
+  width: 10px;
+  height: 3px;
+  background: #2f9bff;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+header .burger .line2 {
+  width: 15px;
+  height: 3px;
+  margin: 2px 0;
+  background: #2f9bff;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+header .burger .line3 {
+  width: 20px;
+  height: 3px;
+  background: #2f9bff;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.tool1 {
+  position: relative;
+  top: 10vh;
+  width: 100vw;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tool1 .left-container, .tool1 .right-container {
+  width: 50vw;
+}
+
+.tool1 .left-container {
+  padding: 0 100px;
+}
+
+.tool1 .left-container .title-airmeet {
+  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+.tool1 .left-container .title-airmeet .logo-airmeet {
+  width: 50px;
+}
+
+.tool1 .left-container .title-airmeet .airmeet {
+  color: #5a06b9;
+  font-size: 2em;
+  font-weight: 400;
+  padding: 0 25px;
+}
+
+.tool1 .left-container .description {
+  color: #333;
+}
+
+.tool1 .left-container .description p {
+  font-size: 1.2em;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.tool1 .right-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 100px;
+}
+
+.tool1 .right-container .how-to-use {
+  text-transform: uppercase;
+  color: #5a06b9;
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+footer {
+  position: relative;
+  top: 10vh;
+  width: 100vw;
+  background: #2f9bff;
+  padding: 1em 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .logo-AIESEC {
+  width: 120px;
+}
+
+@media screen and (max-width: 600px) {
+  header .register-btn {
+    font-size: 0.8em;
+    padding: .6em 1.6em;
+  }
+  header .nav-bar {
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    height: 90vh;
+    width: 100vw;
+    background: #2f9bff;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  header .nav-bar ul {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  header .nav-bar ul li {
+    width: 100%;
+    height: 100%;
+    border: solid 1px #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .nav-bar ul li a {
+    padding: 20px 40%;
+    color: #ffffff;
+    font-weight: 600;
+  }
+  header .nav-bar ul .active a {
+    border: none;
+  }
+  header .burger {
+    display: block;
+  }
+  .tool1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    top: 15vh;
+    margin-bottom: 100px;
+  }
+  .tool1 .left-container, .tool1 .right-container {
+    width: 100%;
+  }
+  .tool1 .left-container {
+    padding: 0 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 50px;
+  }
+  .tool1 .left-container .title-airmeet .logo-airmeet {
+    width: 35px;
+  }
+  .tool1 .left-container .description {
+    text-align: justify;
+  }
+  .tool1 .right-container {
+    padding: 0 10%;
+  }
+  .tool1 .right-container iframe {
+    display: block;
+    width: 100%;
+  }
+}
+
+.nav-active {
+  -webkit-transform: translateX(0%) !important;
+          transform: translateX(0%) !important;
+}
+
+.toggle .line1 {
+  width: 20px !important;
+  -webkit-transform: rotate(-45deg) translate(-5px, 2px);
+          transform: rotate(-45deg) translate(-5px, 2px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  -webkit-transform: rotate(45deg) translate(-5px, -2px);
+          transform: rotate(45deg) translate(-5px, -2px);
+}
+/*# sourceMappingURL=tools-styles.css.map */

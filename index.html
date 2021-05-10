@@ -4,47 +4,306 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+    crossorigin="anonymous"></script>
+    <script src="./app/countdown.js"></script>
+    <link rel="shortcut icon" href="./images/Logonotext.png" type="image/x-icon">
     <title>Kick'Off</title>
 </head>
 <body>
+
+        <header>
+            <div class="logo">
+                <a href="http://aiesec.org.ma/" target="blank"><img src="./images/IKIGAI.png" alt="IKIGAI's logo"></a>
+            </div>
     
-    <header>
-        <div class="logo">
-            <img src="./images/IKIGAI.png" alt="IKIGAI's logo">
-        </div>
-
-        <div class="nav-bar">
-            <ul>
-                <li><a href="" class="link1">Home</a></li>
-                <li><a href="" class="link2">Tools</a></li>
-                <li><a href="" class="link3">Page3</a></li>
-                <li><a href="" class="link4">Page4</a></li>
-                <li><a href="" class="link5">Page5</a></li>
-            </ul>
-        </div>
-
-        <a href="" class="register-btn">Register</a>
-    </header>
-
-    <div class="section1">
-        <div class="hero-container">
-            <img src="./images/logokick.png" alt="kick'off's logo" class="logo-kickoff">
-            
+            <nav class="nav-bar">
+                <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="tools.html">Tools</a></li>
+                    <!-- <li><a href="">Page3</a></li>
+                    <li><a href="">Page4</a></li>
+                    <li><a href="">Page5</a></li> -->
+                </ul>
+            </nav>
     
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSd0cgpL61pSbq9QSh-oVyb9ba2m7FX-TLFWpYero_SO0eTaPw/viewform?usp=sf_link" class="register-btn">Register</a>
+    
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </header>
+
+        
+        <div class="section1">
             <div class="hero-section">
-                <div class="attraction-phrase">ARE YOU READY!!!</div>
+                <div class="welcoming-phrase">ARE YOU READY!!!</div>
     
-                <div class="countdown">
-                    
+                <div class="countdown-main">
+                    <section id="countdown-container" class="countdown-container">
+                        <article id="js-countdown" class="countdown">
+                            <div class="date-part">
+                                <span id="js-days" class="number"></span>
+                                <span class="time">DAYS</span>
+                            </div>
+    
+                            <span id="js-separator" class="separator">:</span>
+    
+                            <div class="date-part">
+                                <span id="js-hours" class="number"></span>
+                                <span class="time">HOURS</span>
+                            </div>
+    
+                            <span id="js-separator" class="separator">:</span>
+    
+                            <div class="date-part">
+                                <span id="js-minutes" class="number"></span>
+                                <span class="time">MINUTES</span>
+                            </div>
+                            
+                            <span id="js-separator" class="separator">:</span>
+    
+                            <div class="date-part">
+                                <span id="js-seconds" class="number"></span>
+                                <span class="time">SECONDS</span>
+                            </div>
+                            
+                        </article>
+                    </section>
+                  </div>
+    
+                <div class="kickoff-text">
+                    Here is the time for the conference of the year <span style="color:#2f9bff;">"Kick Off 2020"</span>. This time, we will live an experience like we never had. You will <span style="color:#2f9bff;">Activate, Accelerate, Hit the Momentum and compound a lasting habit</span>. to ensure that you are compounding your leadership in the best way possible. All of this within a space of joy, compassion, understanding, craziness, and self-reflection while happening virtually. The conference will take place <span style="color:#2f9bff;">between the 27th and 30th of October 2020</span> on the Airmeet platform.
+                    So are you ready to take your personal experience to the next level? Are you ready to build your future while contributing to the one of the organization?  Are you ready to welcome new family members? Are you ready for more? If yes, <span style="color:#2f9bff;">join us and register now !</span>
                 </div>
+            </div>
     
-                <div class="hero-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, ullamcorper sed vitae leo enim donec. Feugiat viverra etiam viverra risus. Vel egestas tincidunt facilisi sit nam scelerisque ultricies. Luctus amet, aliquet diam sodales. Sed feugiat erat duis ipsum in nibh purus scelerisque dui. Vulputate ultricies suscipit mauris sollicitudin cum cursus. Morbi consequat, amet, sodales amet. Integer nunc a, viverra congue. At faucibus suscipit leo ac ac et.
+            <div class="image-bg"></div>
+            
+        </div>
+    
+        <div class="section2">
+            <div class="title-news">
+                <img src="./images/icon.png" alt="" class="icon1">
+                <div class="news">News</div>
+            </div>
+            
+            <div class="main-article">
+                <img src="./images/image.png" alt="" class="main-picture">
+            </div>
+    
+            <div class="side-article">
+    
+                <div class="column">
+                    <div class="article">
+                        <img src="" alt="" class="picture">
+            
+                        <div class="header">Kick'Off Notice</div>
+    
+                        <div class="date">09/10  00:00</div>
+            
+                        <div class="text"><p><span style="color:#2f9bff;">Kick'Off 20</span> is finally here and it's time again to gather as one AIESEC for Morocco but this time it will be very special and unique since we are have new members joining us for the first time and it's our 2nd Virtual Conference together !</p>
+
+                            <p>It's happening <span style="color:#2f9bff;">from the 27th to the 30th of October 2020</span> and we can't wait to see you all!
+                            The Conference fees are :<br> 
+                            -For <span style="color:#2f9bff; font-weight: 700;">100 Delegates</span> the price will be <span style="color:#2f9bff; font-weight: 700;">80 MAD</span> per delegate.<br>
+                            -For <span style="color:#2f9bff; font-weight: 700;">200 Delegates</span> the price will be <span style="color:#2f9bff; font-weight: 700;">40 MAD</span> per delegate.<br>
+                            -For <span style="color:#2f9bff; font-weight: 700;">350 Delegates</span> the price will be <span style="color:#2f9bff; font-weight: 700;">23MAD</span> per delegate.<br>
+                            The final price will be communicated once the registrations are closed and confirmed
+                            The Fees will be convering <span style="color:#2f9bff;">the digital aspect (Premimum version)</span></p>
+        
+                            <p>The <span style="color:#2f9bff;">DDL</span> to apply: <span style="color:#2f9bff;">12th of October 2020 at 23:59 GMT+1.</span></p>
+        
+                            <p>Make sure to register with your AIESEC email so that you can have access to the platform.</p>
+                        </div>
+                    </div>
+    
+                    <div class="article">
+                        <img src="" alt="" class="picture">
+            
+                        <div class="header">Kick'Off Registration</div>
+    
+                        <div class="date">10/10  20:15</div>
+            
+                        <div class="text"><p>Hello dear network,
+                            We are happy to announce to you the very <span style="color: #2f9bff;">1st delegate</span> who registered for KICKOFF'20 <span style="color: #2f9bff;">Imane Beni Aich</span> 🔥</p>
+                            <p>We are looking forward to receiving your registrations.</p>
+                            <p style="color: #2f9bff;">Click on the "Register" button.</p>
+                        </div>
+                    </div>
+    
+                    <!-- <div class="article">
+                        <img src="" alt="" class="picture">
+            
+                        <div class="header">Lorem ipsum dolor sit amet</div>
+    
+                        <div class="date">15/09  20:15</div>
+            
+                        <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, ullamcorper sed vitae leo enim donec. Feugiat viverra etiam viverra risus. Vel egestas tincidunt facilisi sit nam scelerisque ultricies. </div>
+                    </div>
+    
+                    <div class="article">
+                        <img src="" alt="" class="picture">
+            
+                        <div class="header">Lorem ipsum dolor sit amet</div>
+    
+                        <div class="date">15/09  20:15</div>
+            
+                        <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, ullamcorper sed vitae leo enim donec. Feugiat viverra etiam viverra risus. Vel egestas tincidunt facilisi sit nam scelerisque ultricies. </div>
+                    </div>
+    
+                    <div class="article">
+                        <img src="" alt="" class="picture">
+            
+                        <div class="header">Lorem ipsum dolor sit amet</div>
+    
+                        <div class="date">15/09  20:15</div>
+            
+                        <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, ullamcorper sed vitae leo enim donec. Feugiat viverra etiam viverra risus. Vel egestas tincidunt facilisi sit nam scelerisque ultricies. </div>
+                    </div>
+    
+                    <div class="article">
+                        <img src="" alt="" class="picture">
+            
+                        <div class="header">Lorem ipsum dolor sit amet</div>
+    
+                        <div class="date">15/09  20:15</div>
+            
+                        <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, ullamcorper sed vitae leo enim donec. Feugiat viverra etiam viverra risus. Vel egestas tincidunt facilisi sit nam scelerisque ultricies. </div>
+                    </div>
+    
+                    <div class="article">
+                        <img src="" alt="" class="picture">
+            
+                        <div class="header">Lorem ipsum dolor sit amet</div>
+    
+                        <div class="date">15/09  20:15</div>
+            
+                        <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, ullamcorper sed vitae leo enim donec. Feugiat viverra etiam viverra risus. Vel egestas tincidunt facilisi sit nam scelerisque ultricies. </div>
+                    </div> -->
                 </div>
             </div>
         </div>
-    </div>
+    
+        <div class="section3">
+            <div class="title-teasers">
+                <img src="./images/icon.png" alt="" class="icon2">
+                <div class="teasers">Teasers</div>
+            </div>
+    
+            <div class="videos">
+                <iframe width="250" height="140" src="https://www.youtube.com/embed/BU0je8hX0xM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="250" height="140" src="https://www.youtube.com/embed/mYQBUFx3V2Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="250" height="140" src="https://www.youtube.com/embed/7PGK7CHx4Xw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="250" height="140" src="https://www.youtube.com/embed/Qmrm3aYex5Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="250" height="140" src="https://www.youtube.com/embed/1u-74sc4IIs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    
+        <div class="section4">
+            <div class="title-FAQ">
+                <img src="./images/icon.png" alt="" class="icon3">
+                <div class="FAQ">F.A.Q.</div>
+            </div>
+    
+            <div class="question-cards">
+                <details class="card">
+                    <summary class="question">
+                        <span>What is Kick'Off ?</span>
 
+                        <div class="drop">
+                            <div class="left"></div>
+                            <div class="right"></div>
+                        </div>
+                    </summary>
+    
+                    <div class="content">
+                        This conference is an opportunity for all AIESECers to bond through several seminars, games and workshops. Also to share thoughts and ideas about new community projects in order to create a positive impact on the Moroccan community.
+                    </div>
+                </details>
+    
+                <details class="card">
+                    <summary class="question">
+                        <span>How to Register ?</span>
+
+                        <div class="drop">
+                            <div class="left"></div>
+                            <div class="right"></div>
+                        </div>
+                    </summary>
+    
+                    <div class="content">
+                        Click on the "Register" button above, fill the form, and make sure to read the notice in the news section before submitting your registration.
+                    </div>
+                </details>
+    
+                <!-- <details class="card">
+                    <summary class="question">
+                        <span>what is Kick'Off ?</span>
+
+                        <div class="drop">
+                            <div class="left"></div>
+                            <div class="right"></div>
+                        </div>
+                    </summary>
+    
+                    <div class="content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </div>
+                </details> -->
+            </div>
+
+            <div class="form-container">
+                <div class="form-title">
+                    Ask Us 
+                </div>
+
+
+                <form class="kwes-form" action="https://kwes.io/api/foreign/forms/ZfrkLzXYi2vo3dYOUBwq" method="POST">
+                    <div class="form-label">
+                        <input name="name" type="text" required>
+                        <label class="label-text">
+                            <span>Full Name</span>
+                        </label>
+                    </div>
+
+                    <div class="form-label">
+                        <input name="Email" type="text" required>
+                        <label class="label-text">
+                            <span>Email</span>
+                        </label>
+                    </div>
+
+                    <div class="form-label">
+                        <input name="question" type="text" required>
+                        <label class="label-text">
+                            <span>Your Question</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" value="Submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    
+        <footer>
+            <div class="aiesec">
+                <a href="http://aiesec.org/" target="_blank" rel="noopener noreferrer"><img src="./images/AIESEC.png" alt="AIESEC's logo" class="logo-AIESEC"></a>
+            </div>
+    
+            <div class="contacts">
+    
+            </div>
+        </footer>
+
+    <script src="./app/nav.js"></script>
+    <script src="./app/app.js"></script>
+    <script src="./app/main.js"></script>
+    <script src="https://kwes.io/v2/kwes-script.js" defer></script>
 </body>
 </html>
